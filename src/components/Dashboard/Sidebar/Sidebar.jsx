@@ -27,7 +27,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Small Screen Navbar (Hamburger Menu) */}
-      <div className="bg-blue-900 dark:bg-gray-900 dark:text-white text-white flex justify-between md:hidden">
+      <div className="bg-[#13265A] dark:bg-gray-900 dark:text-white text-white flex justify-between md:hidden">
         <div className="block cursor-pointer p-4 font-bold">
           <Link to="/">
             <img
@@ -49,7 +49,7 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div
-        className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-blue-900 dark:bg-gray-900 dark:text-white w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${isActive ? 'translate-x-0' : '-translate-x-full'
+        className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-[#13265A] dark:bg-gray-900 dark:text-white w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${isActive ? 'translate-x-0' : '-translate-x-full'
           } md:translate-x-0 transition-transform duration-200 ease-in-out`}
       >
         <div>

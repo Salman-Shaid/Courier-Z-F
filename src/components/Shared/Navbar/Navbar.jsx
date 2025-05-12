@@ -17,7 +17,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className="fixed w-full bg-blue-900 dark:bg-gray-900 z-10 shadow-sm transition-colors duration-300">
+    <div className="fixed w-full bg-[#13265A] dark:bg-gray-900 z-10 shadow-sm transition-colors duration-300">
       <div className="border-b-[1px] border-gray-500">
         <Container>
           <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
@@ -27,8 +27,6 @@ const Navbar = () => {
                 <img className="w-30 h-24" src={logo} alt="logo" />
               </Link>
             </div>
-
-
 
             {/* Center Navigation */}
             <div className="hidden md:flex gap-6">
@@ -74,7 +72,7 @@ const Navbar = () => {
                     Contact
                   </Link>
 
-                  <Link
+                  {/* <Link
                     to="/dashboard"
                     className={`font-semibold transition pb-2 ${location.pathname === "/dashboard"
                       ? "text-yellow-400 border-b-2 border-yellow-400"
@@ -82,7 +80,7 @@ const Navbar = () => {
                       }`}
                   >
                     Dashboard
-                  </Link>
+                  </Link> */}
                 </>
               )}
             </div>
@@ -129,7 +127,7 @@ const Navbar = () => {
                 </div>
 
                 {isOpen && (
-                  <div className="absolute rounded-xl shadow-md w-[40vw] md:w-[10vw] bg-blue-900 dark:bg-gray-800 overflow-hidden right-0 top-12 text-sm">
+                  <div className="absolute rounded-xl shadow-md w-[40vw] md:w-[20vw] bg-[#13265A] dark:bg-gray-800 overflow-hidden -right-20 top-12 text-sm">
                     <div className="flex flex-col cursor-pointer">
                       {user ? (
                         <>

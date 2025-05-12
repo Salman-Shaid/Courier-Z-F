@@ -79,17 +79,17 @@ const CustomerReview = () => {
                     </div>
 
 
-                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-6">
                         {/* Review Form */}
                         <form
                             onSubmit={handleSubmit}
-                            className="lg:w-1/2 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg"
+                            className="lg:w-1/2 pt-12 bg-white dark:bg-gray-800 p-8 rounded-xl border shadow-lg"
                         >
-                            <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-white">
+                            <h3 className="text-3xl font-semibold mb-6 text-gray-800 dark:text-white">
                                 Share Your Experience
                             </h3>
 
-                            <label className="block mb-2 text-lg text-gray-700 dark:text-white">Your Rating:</label>
+                            <label className="block mb-3 text-xl text-gray-700 dark:text-white">Your Rating:</label>
                             <div className="flex mb-6 text-yellow-400">
                                 {[...Array(5)].map((_, index) => (
                                     <FaStar
@@ -104,7 +104,7 @@ const CustomerReview = () => {
                             <textarea
                                 value={comment}
                                 onChange={(e) => setComment(e.target.value)}
-                                className="w-full p-4 mb-6 rounded-xl border dark:bg-gray-700 dark:text-white shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-600"
+                                className="w-full p-4 mb-8 rounded-xl border dark:bg-gray-700 dark:text-white shadow-inner focus:outline-none focus:ring-2 focus:ring-yellow-400"
                                 placeholder="Write your review..."
                                 rows="4"
                                 required
@@ -112,7 +112,7 @@ const CustomerReview = () => {
 
                             <button
                                 type="submit"
-                                className="w-full bg-blue-600 text-white px-8 py-3 rounded-xl hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+                                className="w-full text-white px-8 py-3 btn bg-yellow-500 hover:bg-[#EE8215]    font-semibold rounded-md border-[#EE8215] focus:outline-none focus:ring-2 focus:ring-primary shadow-lg"
                             >
                                 Submit Review
                             </button>
@@ -120,7 +120,7 @@ const CustomerReview = () => {
 
                         {/* Review List */}
                         <div
-                            className="lg:w-1/2 overflow-y-auto rounded-xl shadow-lg bg-white dark:bg-gray-800 p-6 space-y-6"
+                            className="lg:w-1/2 overflow-y-auto rounded-xl shadow-lg bg-white dark:bg-gray-800 p-6 space-y-6 border"
                             style={{ maxHeight: '500px', overflowY: 'auto' }}
                         >
                             {loading ? (
@@ -129,7 +129,7 @@ const CustomerReview = () => {
                                 reviews.map((review) => (
                                     <div
                                         key={review._id}
-                                        className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105"
+                                        className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105 "
                                     >
                                         <div className="flex items-center mb-4">
                                             <img

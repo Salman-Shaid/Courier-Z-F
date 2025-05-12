@@ -57,7 +57,7 @@ const AllDeliveryMan = () => {
       <div className="overflow-x-auto">
         <div className="min-w-full shadow-lg rounded-lg border border-gray-200">
           <table className="min-w-full bg-white text-gray-700">
-            <thead className="bg-blue-900 text-white">
+            <thead className="bg-[#13265A] text-white">
               <tr>
                 <th className="px-5 py-3 text-left text-sm font-semibold uppercase">Name</th>
                 <th className="px-4 py-3 text-left text-sm font-semibold uppercase">Email</th>

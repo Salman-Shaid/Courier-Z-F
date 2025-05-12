@@ -55,14 +55,14 @@ const ManageUsers = () => {
         <Helmet>
           <title>All Customers</title>
         </Helmet>
-        <h1 className="text-4xl font-bold py-8 text-center text-white bg-blue-900 dark:bg-gray-500 dark:text-white">
+        <h1 className="text-4xl font-bold py-8 text-center text-white bg-[#13265A] dark:bg-gray-500 dark:text-white">
           Total Customers [ {filteredUsers.length} ]
         </h1>
         <div className="pb-8">
           <div className="overflow-x-auto">
             <div className="min-w-full shadow-lg rounded-lg border border-gray-200">
               <table className="min-w-full bg-white text-gray-700">
-                <thead className="bg-blue-900 dark:bg-gray-900 dark:text-white text-white">
+                <thead className="bg-[#13265A] dark:bg-gray-900 dark:text-white text-white">
                   <tr>
                     <th className="px-5 py-3 text-left text-sm font-semibold uppercase">Name</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold uppercase">Email</th>

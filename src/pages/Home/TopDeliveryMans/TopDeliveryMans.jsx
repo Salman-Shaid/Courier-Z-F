@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import { motion } from 'framer-motion';
 import LoadingSpinner from '../../../components/Shared/LoadingSpinner';
+import Container from '../../../components/Shared/Container';
+import { FaEnvelope, FaStar, FaBox } from 'react-icons/fa';
 
 const TopDeliveryMans = () => {
     const [deliveryMen, setDeliveryMen] = useState([]);
@@ -28,62 +30,74 @@ const TopDeliveryMans = () => {
     if (error) return <div className="text-center text-red-500 py-10">Error: {error}</div>;
 
     return (
-        <div className="dark:bg-gray-900 dark:text-white">
-            <div className="container mx-auto px-4 py-36">
-                {/* Section Header */}
-                <div className="mb-10">
-                    <h2 className="text-5xl font-bold text-center mb-5 text-gray-800 dark:text-white">
-                        Our Top Delivery Men
-                    </h2>
-                    <p className="text-lg text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                        Meet our most reliable and hardworking delivery personnel who ensure your parcels reach their 
-                        destination on time, every time. Their dedication and efficiency make them the backbone of our service.
-                    </p>
-                </div>
+        <Container>
+            <div className="dark:bg-gray-900 dark:text-white">
+                <div className="px-4 py-28">
+                    {/* Header */}
+                    <div className="mb-14 text-center">
+                        <h2 className="text-5xl font-extrabold mb-4 text-gray-800 dark:text-white">
+                            Our Top Delivery Heroes
+                        </h2>
+                        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                            These dedicated professionals deliver excellence every day — rain or shine. Meet the faces behind our fast and reliable service.
+                        </p>
+                    </div>
 
-                {/* Delivery Men Cards */}
-                <motion.div 
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-                    initial="hidden"
-                    animate="visible"
-                    variants={{
-                        hidden: { opacity: 0 },
-                        visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
-                    }}
-                >
-                    {deliveryMen.map((deliveryMan) => (
-                        <motion.div
-                            key={deliveryMan._id}
-                            className="card dark:bg-gray-800 py-20 shadow-lg rounded-lg p-6 border transition-all duration-300"
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            whileHover={{ scale: 1.05, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)" }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            <div className="avatar flex justify-center mb-4">
-                                <div className="w-2/4 rounded-full border-4 border-gray-300 dark:border-gray-700 overflow-hidden">
-                                    <img 
-                                        src={deliveryMan.image || '/default-avatar.png'} 
-                                        alt={deliveryMan.name} 
-                                        className="object-cover w-full h-full"
-                                    />
+                    {/* Cards Grid */}
+                    <motion.div
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+                        initial="hidden"
+                        animate="visible"
+                        variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
+                        }}
+                    >
+                        {deliveryMen.map((man) => (
+                            <motion.div
+                                key={man._id}
+                                className="relative group overflow-hidden rounded-3xl p-6 bg-white/10 dark:bg-gray-800/30 backdrop-blur-xl shadow-lg border border-gray-200 dark:border-gray-700 transition-transform hover:-translate-y-2 hover:shadow-xl"
+                                initial={{ opacity: 0, y: 40 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4 }}
+                            >
+                                {/* Border Animation Effect */}
+                                <div className="absolute inset-0 shadow-4xl rounded-2xl border-2 border-yellow-400 scale-x-0 scale-y-0 group-hover:scale-x-100 group-hover:scale-y-100 transition-transform duration-500 origin-bottom-left pointer-events-none z-0"></div>
+
+                                {/* Card Content */}
+                                <div className="relative z-10">
+                                    {/* Avatar */}
+                                    <div className="flex justify-center mb-6">
+                                        <div className="relative w-full h-96 rounded-2xl overflow-hidden border-2 border-yellow-300 shadow-xl">
+                                            <img
+                                                src={man.image || '/default-avatar.png'}
+                                                alt={man.name}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Info */}
+                                    <div className="text-center space-y-2">
+                                        <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">{man.name}</h3>
+                                        <p className="text-gray-500 dark:text-gray-300 flex justify-center items-center gap-2 text-sm">
+                                            <FaEnvelope /> {man.email}
+                                        </p>
+                                        <p className="flex justify-center items-center gap-1 text-xl font-semibold text-yellow-400">
+                                            <FaStar /> {man.averageRating?.toFixed(1)} / 5
+                                        </p>
+                                        <p className="flex justify-center items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
+                                            <FaBox /> Parcels Delivered: {man.totalReviews}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="text-center">
-                                <h3 className="text-3xl mb-2 font-semibold">{deliveryMan.name}</h3>
-                                <p className="text-gray-600 dark:text-gray-400">Email: {deliveryMan.email}</p>
-                                <p className="text-yellow-500 mb-2 text-2xl font-bold mt-2">
-                                    Average Rating: {deliveryMan.averageRating?.toFixed(1)} ⭐
-                                </p>
-                                <p className="text-gray-600 dark:text-gray-400">
-                                    Parcels Delivered: {deliveryMan.totalReviews}
-                                </p>
-                            </div>
-                        </motion.div>
-                    ))}
-                </motion.div>
+                            </motion.div>
+
+                        ))}
+                    </motion.div>
+                </div>
             </div>
-        </div>
+        </Container>
     );
 };
 

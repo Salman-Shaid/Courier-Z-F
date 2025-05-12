@@ -19,9 +19,9 @@ const Banner = () => {
                     <input
                         type="text"
                         placeholder="Enter tracking number or destination"
-                        className="input input-bordered w-full md:flex-grow py-3 px-4 rounded-md bg-blue-900 border-2 border-yellow-400 focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="input input-bordered w-full md:flex-grow py-3 px-4 rounded-md bg-[#13265A] border-2 border-yellow-400 focus:outline-none focus:ring-2 focus:ring-primary"
                     />
-                    <button className="btn btn-primary bg-yellow-500 hover:bg-yellow-600 text-white w-full md:w-auto py-3 px-6 font-semibold rounded-md">
+                    <button className="btn btn-primary bg-yellow-500 hover:bg-[#EE8215] text-white w-full md:w-auto py-3 px-6 font-semibold rounded-md border-[#EE8215] focus:outline-none focus:ring-2 focus:ring-primary shadow-lg">
                         Track Now
                     </button>
                 </div>

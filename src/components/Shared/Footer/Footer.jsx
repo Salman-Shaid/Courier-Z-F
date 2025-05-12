@@ -5,7 +5,7 @@ import logo from "../../../assets/images/logo.png"; // Add your logo path
 
 const Footer = () => {
   return (
-    <div className="bg-blue-900 dark:bg-gray-900 text-white mx-auto p-10 shadow-sm transition-colors duration-300">
+    <div className="bg-[#13265A] dark:bg-gray-900 text-white mx-auto p-10 shadow-sm transition-colors duration-300">
       <Container>
         <footer className="grid sm:grid-cols-1 md:grid-cols-4 gap-6">
 
