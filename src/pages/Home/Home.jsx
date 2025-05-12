@@ -6,6 +6,8 @@ import CustomerReview from './Reviews/CustomerReview'
 import OurClients from './OurClients/OurClients'
 import BlogSection from './BlogSection/BlogSection'
 import WhyChooseUsSection from './WhyChooseUsSection/WhyChooseUsSection'
+import PricePlan from './PricePlan/PricePlan'
+import LiveTrackingDemo from './LiveTrackingDemo/LiveTrackingDemo'
 
 
 
@@ -20,9 +22,11 @@ const Home = () => {
       <OurFeatures></OurFeatures>
       <TopDeliveryMans></TopDeliveryMans>
       <CustomerReview></CustomerReview>
+      <WhyChooseUsSection></WhyChooseUsSection>
       <OurClients></OurClients>
       <BlogSection></BlogSection>
-      <WhyChooseUsSection></WhyChooseUsSection>
+      <PricePlan></PricePlan>
+      <LiveTrackingDemo></LiveTrackingDemo>
     </div>
   )
 }

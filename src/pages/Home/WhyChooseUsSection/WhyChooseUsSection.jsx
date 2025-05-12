@@ -38,7 +38,7 @@ const WhyChooseUsSection = () => {
 
           {/* Left Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white leading-tight mb-6">
               Why Thousands Trust <br /> Our Courier Service
             </h2>
             <p className="text-gray-600 dark:text-gray-300 text-lg mb-10 max-w-xl">

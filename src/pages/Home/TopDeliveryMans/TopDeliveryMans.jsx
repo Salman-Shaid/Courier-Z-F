@@ -35,7 +35,7 @@ const TopDeliveryMans = () => {
                 <div className="px-4 py-28">
                     {/* Header */}
                     <div className="mb-14 text-center">
-                        <h2 className="text-5xl font-extrabold mb-4 text-gray-800 dark:text-white">
+                        <h2 className="text-4xl font-extrabold mb-4 text-gray-800 dark:text-white">
                             Our Top Delivery Heroes
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">

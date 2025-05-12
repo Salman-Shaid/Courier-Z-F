@@ -33,7 +33,7 @@ const secondRowClients = courierClients.slice(middleIndex);
 
 const OurClients = () => {
   return (
-    <section className="py-16 bg-white dark:bg-gray-900">
+    <section className="py-16 mb-10 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
           Trusted by Leading Brands

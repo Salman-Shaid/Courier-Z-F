@@ -34,7 +34,7 @@ const OurFeatures = () => {
                 <div className=" bg-black bg-opacity-0 dark:bg-none dark:text-white"></div>
 
                 <div className="max-w-screen-2xl mx-auto  text-center z-10">
-                    <h2 className="text-5xl font-bold dark:text-white text-gray-800 my-3 ">
+                    <h2 className="text-4xl font-bold dark:text-white text-gray-800 my-3 ">
                         Our Features
                     </h2>
 
