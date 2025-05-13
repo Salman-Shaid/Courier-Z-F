@@ -5,10 +5,9 @@ import useAuth from '../../../hooks/useAuth';
 import avatarImg from '../../../assets/images/placeholder.jpg';
 import logo from '../../../assets/images/logo.png';
 import Lottie from 'lottie-react';
-// import notificationAnimation from '../../../assets/lottie/notifation bell.json';
 import menuAnimation from '../../../assets/lottie/menu.json';
 import useTheme from '../../../hooks/useTheme';
-import { Moon, Sun } from 'lucide-react'; // Import Icons
+import { Moon, Sun } from 'lucide-react'; 
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
@@ -154,8 +153,6 @@ const Navbar = () => {
                           <Link to="/dashboard" className="px-4 py-3 hover:bg-gray-700 transition font-semibold text-white">
                             Dashboard
                           </Link>
-
-
 
                           <div
                             onClick={logOut}
