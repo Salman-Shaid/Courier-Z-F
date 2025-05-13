@@ -12,7 +12,7 @@ const stages = [
   { label: 'Delivered', icon: <FaCheckCircle />, color: '#28A745' },
 ];
 
-const LiveTracking = () => {
+const LiveTrackingDemo = () => {
   const [currentStage, setCurrentStage] = useState(0);
 
   useEffect(() => {
@@ -113,4 +113,4 @@ const LiveTracking = () => {
   );
 };
 
-export default LiveTracking;
+export default LiveTrackingDemo;

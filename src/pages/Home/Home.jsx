@@ -8,6 +8,7 @@ import BlogSection from './BlogSection/BlogSection'
 import WhyChooseUsSection from './WhyChooseUsSection/WhyChooseUsSection'
 import PricePlan from './PricePlan/PricePlan'
 import LiveTrackingDemo from './LiveTrackingDemo/LiveTrackingDemo'
+import Faq from './Faq/Faq'
 
 
 
@@ -27,6 +28,7 @@ const Home = () => {
       <BlogSection></BlogSection>
       <PricePlan></PricePlan>
       <LiveTrackingDemo></LiveTrackingDemo>
+      <Faq></Faq>
     </div>
   )
 }
