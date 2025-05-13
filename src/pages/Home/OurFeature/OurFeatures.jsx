@@ -52,7 +52,7 @@ const OurFeatures = () => {
 
                             <div className="absolute inset-0 bg-black bg-opacity-30 rounded-lg"></div>
 
-                            <div className="z-10 flex justify-center text-blue-600 text-4xl mb-4">
+                            <div className="z-10 flex justify-center text-[#FF8119] text-4xl mb-4">
                                 <FaShieldAlt size={70} />
                             </div>
                             <h3 className="relative text-3xl font-semibold mb-2 text-white z-10">Parcel Safety</h3>
@@ -67,7 +67,7 @@ const OurFeatures = () => {
                         >
                             <div className="absolute inset-0 bg-black bg-opacity-30 rounded-lg"></div>
 
-                            <div className="z-10 flex justify-center text-center text-blue-600 text-4xl mb-4">
+                            <div className="z-10 flex justify-center text-center text-[#FF8119] text-4xl mb-4">
                                 <FaRocket size={70} />
                             </div>
                             <h3 className="relative text-3xl font-semibold mb-2 text-white z-10 ">Super Fast Delivery</h3>
@@ -82,7 +82,7 @@ const OurFeatures = () => {
                         >
                             <div className="absolute inset-0 bg-black bg-opacity-30 rounded-lg"></div>
 
-                            <div className="z-10  flex justify-center text-blue-600 text-4xl mb-4">
+                            <div className="z-10  flex justify-center text-[#FF8119] text-4xl mb-4">
                                 <FaUsers size={80} />
                             </div>
                             <h3 className="relative text-3xl font-semibold mb-2 text-white z-10">Easy to Booking</h3>
@@ -96,21 +96,21 @@ const OurFeatures = () => {
                     <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                         <div className="dark:bg-gray-700 dark:text-white p-8 rounded-lg shadow-md text-center border border-gray-200 hover:shadow-lg transition-all">
                             <h4 className="text-lg font-semibold ">Total Parcels Booked</h4>
-                            <p className="text-4xl font-bold text-blue-600 mt-2">
+                            <p className="text-4xl font-bold text-[#FF8119] mt-2">
                                 <CountUp start={0} end={totalBookings} duration={3} />
                             </p>
                         </div>
 
                         <div className=" dark:bg-gray-700 dark:text-white p-8 rounded-lg shadow-md text-center border border-gray-200 hover:shadow-lg transition-all">
                             <h4 className="text-lg font-semibold ">Total Parcels Delivered</h4>
-                            <p className="text-4xl font-bold text-blue-600 mt-2">
+                            <p className="text-4xl font-bold text-[#FF8119] mt-2">
                                 <CountUp start={0} end={totalDelivery} duration={3} />
                             </p>
                         </div>
 
                         <div className="dark:bg-gray-700 dark:text-white p-8 rounded-lg shadow-md text-center border border-gray-200 hover:shadow-lg transition-all">
                             <h4 className="text-lg font-semibold ">Total Users</h4>
-                            <p className="text-4xl font-bold text-blue-600 mt-2">
+                            <p className="text-4xl font-bold text-[#FF8119] mt-2">
                                 <CountUp start={0} end={totalUsers} duration={3} />
                             </p>
                         </div>

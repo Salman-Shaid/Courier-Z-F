@@ -34,10 +34,10 @@ const LiveTrackingDemo = () => {
   return (
     <div>
       <Container>
-        <div className="  flex items-center justify-center my-24 dark:text-white dark:bg-gray-800">
-          <div className="w-full rounded-xl p-6 sm:p-10 border">
+        <div className=" flex items-center justify-center my-24 dark:text-white  ">
+          <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-xl  p-6 sm:p-10 border">
             <h2 className="text-3xl font-bold text-center  mb-10">
-              📦 Live Package Tracking
+              Live Package Tracking
             </h2>
 
             {/* Progress Bar */}

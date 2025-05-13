@@ -33,7 +33,7 @@ const features = [
 const WhyChooseUsSection = () => {
   return (
     <Container>
-      <section className="py-10 lg:py-14 mb-20 bg-gray-100 dark:bg-gray-900 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700">
+      <section className="py-10 lg:py-14 mb-20 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md border-2 dark:border-gray-300">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center px-4 sm:px-8 md:px-16">
 
           {/* Left Content */}

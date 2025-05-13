@@ -24,7 +24,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className='w-48 '>
               <Link to="/">
-                <img className="w-30 h-24" src={logo} alt="logo" />
+                <img className="w-20 h-20" src={logo} alt="logo" />
               </Link>
             </div>
 
@@ -101,18 +101,18 @@ const Navbar = () => {
               </button>
 
               {/* Dropdown Menu */}
-              <div className="relative">
-                <div className="flex flex-row items-center gap-3">
+              <div className="relative ">
+                <div className="flex flex-row items-center gap-3 ">
                   {/* Dropdown Button */}
                   <div
                     onClick={() => setIsOpen(!isOpen)}
                     className="p-1 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-md transition"
                   >
 
-                    <div className="hidden md:block">
+                    <div className="hidden md:block ">
                       {/* Avatar */}
                       <img
-                        className="rounded-full"
+                        className="rounded-full "
                         referrerPolicy="no-referrer"
                         src={user && user.photoURL ? user.photoURL : avatarImg}
                         alt="profile"
@@ -127,11 +127,11 @@ const Navbar = () => {
                 </div>
 
                 {isOpen && (
-                  <div className="absolute rounded-xl shadow-md w-[40vw] md:w-[20vw] bg-[#13265A] dark:bg-gray-800 overflow-hidden -right-20 top-12 text-sm">
+                  <div className="absolute rounded-xl shadow-md  bg-[#13265A] dark:bg-gray-800 overflow-hidden -right-4 top-12 text-sm">
                     <div className="flex flex-col cursor-pointer">
                       {user ? (
                         <>
-                          <div className="p-4 text-white text-center">
+                          <div className="p-10 text-white text-center">
 
                             <h2 className="mt-2 font-semibold text-lg">{user.displayName || "User"}</h2>
                             <p className="text-gray-300 text-sm">{user.email}</p>
@@ -151,7 +151,7 @@ const Navbar = () => {
                             Contact
                           </Link>
 
-                          <Link to="/dashboard" className="px-4 py-2 hover:bg-gray-700 transition font-semibold text-white">
+                          <Link to="/dashboard" className="px-4 py-3 hover:bg-gray-700 transition font-semibold text-white">
                             Dashboard
                           </Link>
 
@@ -159,7 +159,7 @@ const Navbar = () => {
 
                           <div
                             onClick={logOut}
-                            className="px-4 py-3 hover:bg-gray-700 transition font-semibold cursor-pointer text-white"
+                            className="px-4 py-3 hover:bg-red-800 transition font-semibold cursor-pointer text-white"
                           >
                             Logout
                           </div>

@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import Container from '../../../components/Shared/Container';
 
 const blogs = [
@@ -25,7 +26,7 @@ const blogs = [
 const BlogSection = () => {
     return (
         <Container>
-            <section className="pt-10 rounded-xl mb-20 border-2 dark:border-gray-700 bg-gray-100 dark:bg-gray-900">
+            <section className="pt-10 rounded-xl mb-28 border-2 dark:border-gray-300 bg-gray-100 dark:bg-gray-800">
                 <div className="  px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
                         Latest from Our Blog
@@ -54,7 +55,9 @@ const BlogSection = () => {
 
                 </div>
                 <div className="flex justify-center my-10">
-                    <button className="btn btn-primary bg-yellow-500 hover:bg-[#EE8215] text-white w-full md:w-auto py-3 px-6 font-semibold rounded-md border-[#EE8215] focus:outline-none focus:ring-2 focus:ring-primary shadow-lg">More Blog...</button>
+                    <Link to="/services">
+                        <button className="btn btn-primary bg-yellow-500 hover:bg-[#EE8215] text-white w-full md:w-auto py-3 px-6 font-semibold rounded-md border-[#EE8215] focus:outline-none focus:ring-2 focus:ring-primary shadow-lg">More Blog...</button>
+                    </Link>
                 </div>
             </section>
         </Container>
