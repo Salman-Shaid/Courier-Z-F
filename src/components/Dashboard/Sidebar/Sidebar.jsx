@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 import SellerMenu from './Menu/SellerMenu'
 import CustomerMenu from './Menu/CustomerMenu'
 import useRole from '../../../hooks/useRole'
-
+import logoSide from "../../../assets/images/logo.png"
 
 const Sidebar = () => {
   const { logOut } = useAuth()
@@ -31,7 +31,7 @@ const Sidebar = () => {
         <div className="block cursor-pointer p-4 font-bold">
           <Link to="/">
             <img
-              src="https://i.ibb.co.com/R2gMWyx/logo.png"
+              src={logoSide}
               alt="logo"
               width="40"
               height="40"
