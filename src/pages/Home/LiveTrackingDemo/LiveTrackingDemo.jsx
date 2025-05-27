@@ -91,7 +91,7 @@ const LiveTrackingDemo = () => {
                 </span>
               </p>
               {currentStage === stages.length - 1 && (
-                <p className="text-blue-700 flex justify-center items-center font-semibold mt-2 text-xl">
+                <p className="text-green-600 flex justify-center items-center font-semibold mt-2 text-xl">
                   <span><IoCheckbox size={20}/></span> Package Delivered Successfully!
                 </p>
               )}
@@ -101,7 +101,7 @@ const LiveTrackingDemo = () => {
             <div className="text-center mt-6">
               <button
                 onClick={handleRestart}
-                className="btn btn-primary font-bold bg-yellow-500 hover:bg-[#EE8215] text-white w-full md:w-auto py-3 px-6  rounded-md border-[#EE8215] focus:outline-none focus:ring-2 focus:ring-primary shadow-lg "
+                className="btn btn-primary font-bold bg-yellow-500 hover:bg-[#EE8215] text-white w-full md:w-auto py-3 px-6  rounded-md border-[#EE8215] focus:outline-none focus:ring-2 focus:ring-primary shadow-lg transform transition-transform duration-300 hover:scale-110"
               >
                 <span className=''><VscDebugRestart size={20} /></span> Restart Tracking
               </button>

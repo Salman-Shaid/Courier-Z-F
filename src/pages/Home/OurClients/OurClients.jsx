@@ -9,7 +9,6 @@ const courierClients = [
   { name: 'Pickaboo', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Pickaboo.png/250px-Pickaboo.png' },
   { name: 'Evaly', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Evaly_logo.svg/512px-Evaly_logo.svg.png?20221220223759' },
   { name: 'AjkerDeal', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZU-xt1dmFN4g5LvgmBtkt3SpZmMjhFPSOsA&s' },
-  { name: 'Fabrilife', logo: 'https://www.sajsojjabd.com/media/2023/01/LOGO.png' },
   { name: 'Oppo', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/OPPO_Logo_wiki.png/960px-OPPO_Logo_wiki.png?20170406025614' },
   { name: 'aarong', logo: 'https://www.aarong.com/media/logo/stores/1/aarong-logo.jpg' },
   { name: 'Lotto', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Lotto_Sport_Italia_logo.svg' },

@@ -36,10 +36,12 @@ const Footer = () => {
           <div>
             <h6 className="text-lg font-bold mb-3">Company</h6>
             <ul className="space-y-2">
+              <li><Link to="/services" className="hover:text-yellow-400 transition">Our Service</Link></li>
               <li><Link to="/about" className="hover:text-yellow-400 transition">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link></li>
               <li><Link to="/" className="hover:text-yellow-400 transition">Home</Link></li>
-              <li><Link to="#" className="hover:text-yellow-400 transition">Press Kit</Link></li>
+              <li><Link to="/" className="hover:text-yellow-400 transition">FAQ</Link></li>
+              
             </ul>
           </div>
 

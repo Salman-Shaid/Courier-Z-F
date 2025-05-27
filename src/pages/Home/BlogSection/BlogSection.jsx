@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import Container from '../../../components/Shared/Container';
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 const blogs = [
     {
@@ -44,9 +45,9 @@ const BlogSection = () => {
                                     <p className="text-gray-600 dark:text-gray-300 mb-4 flex-grow">{blog.description}</p>
                                     <a
                                         href={blog.link}
-                                        className="text-blue-600 hover:underline dark:text-blue-400 mt-auto"
+                                        className="text-yellow-500 font-bold hover:underline dark:text-blue-400  flex justify-center items-center text-center"
                                     >
-                                        Read more →
+                                        Read more <span className='ml-2 transform transition-transform duration-300 group-hover:translate-x-1'><HiArrowNarrowRight /></span>
                                     </a>
                                 </div>
                             </div>

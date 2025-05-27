@@ -30,6 +30,7 @@ import PayParcel from '../pages/Dashboard/Customer/PayParcel'
 import AboutUs from '../pages/About/AboutUs'
 import ContactPage from '../pages/ContactPage/ContactPage'
 import Services from '../pages/Services/Services'
+import TrackParcel from '../pages/TrackParcel/TrackParcel'
 
 
 export const router = createBrowserRouter([
@@ -49,19 +50,21 @@ export const router = createBrowserRouter([
       {
         path: '/contact',
         element: <PrivateRoute><ContactPage></ContactPage></PrivateRoute>
-      }, 
+      },
       {
         path: '/services',
         element: <Services></Services>
       },
-      
-
+      {
+        path: "/track/:trackingId",
+        element: <TrackParcel></TrackParcel>
+      },
 
     ],
   },
   { path: '/login', element: <Login /> },
   { path: '/signup', element: <SignUp /> },
-  
+
   {
     path: '/dashboard',
     element: (
@@ -78,7 +81,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      
+
       {
         path: 'bookParcel',
         element: (<PrivateRoute>
@@ -94,10 +97,10 @@ export const router = createBrowserRouter([
             <MyParcels></MyParcels>
           </PrivateRoute>
         ),
-        
+
       },
       {
-        path : "payParcel/:id",
+        path: "payParcel/:id",
         element: <PrivateRoute> <PayParcel></PayParcel> </PrivateRoute>
       },
       {
@@ -133,16 +136,16 @@ export const router = createBrowserRouter([
 
         ),
       },
-      
+
       {
         path: 'allParcels',
         element: <PrivateRoute>
           <AdminRoute>
-          <AllParcels></AllParcels>
+            <AllParcels></AllParcels>
           </AdminRoute>
         </PrivateRoute>
       },
-      
+
       {
         path: 'myDelivery',
         element: <PrivateRoute>

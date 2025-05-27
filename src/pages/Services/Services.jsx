@@ -65,34 +65,34 @@ const Services = () => {
                 </div>
 
                 {/* How It Works Section */}
-                <div className="mt-16 p-8 bg-white dark:bg-gray-700 dark:text-white text-black rounded-lg text-center">
+                <div className="mt-16  bg-white dark:bg-gray-700 dark:text-white text-black rounded-lg text-center">
                     <h2 className="text-3xl font-bold mb-6 text-black dark:text-yellow-500">How It Works</h2>
 
                     <div className="grid md:grid-cols-4 gap-6">
                         {/* Step 1: Book a Pickup */}
                         <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-600 hover:shadow-xl transition">
-                            <FaMapMarkedAlt className="text-blue-700 dark:text-yellow-400 text-5xl mx-auto mb-3" />
+                            <FaMapMarkedAlt className="text-yellow-400 text-5xl mx-auto mb-3" />
                             <h3 className="text-xl font-semibold">1. Book a Pickup</h3>
                             <p className="text-sm mt-2">Schedule a pickup from your home or office through our app or website.</p>
                         </div>
 
                         {/* Step 2: Package Collection */}
                         <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-600 hover:shadow-xl transition">
-                            <FaTruckLoading className="text-blue-700 dark:text-yellow-400 text-5xl mx-auto mb-3" />
+                            <FaTruckLoading className="text-yellow-400 text-5xl mx-auto mb-3" />
                             <h3 className="text-xl font-semibold">2. We Collect It</h3>
                             <p className="text-sm mt-2">Our courier will arrive at the scheduled time to pick up your package.</p>
                         </div>
 
                         {/* Step 3: Real-Time Tracking */}
                         <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-600 hover:shadow-xl transition">
-                            <FaGlobe className="text-blue-700 dark:text-yellow-400 text-5xl mx-auto mb-3" />
+                            <FaGlobe className="text-yellow-400 text-5xl mx-auto mb-3" />
                             <h3 className="text-xl font-semibold">3. Track Your Shipment</h3>
                             <p className="text-sm mt-2">Use our tracking system to monitor your package in real time.</p>
                         </div>
 
                       
                         <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-600 hover:shadow-xl transition">
-                            <FaShippingFast className="text-blue-700 dark:text-yellow-400 text-5xl mx-auto mb-3" />
+                            <FaShippingFast className="text-yellow-400 text-5xl mx-auto mb-3" />
                             <h3 className="text-xl font-semibold">4. Delivery at Your Door</h3>
                             <p className="text-sm mt-2">Your package arrives safely at the destination—fast and secure.</p>
                         </div>
@@ -120,7 +120,7 @@ const Services = () => {
 
            
                 <div className="mt-16 text-center">
-                    <h2 className="text-3xl font-bold text-blue-900 mb-4">Need Assistance?</h2>
+                    <h2 className="text-3xl font-bold  mb-4">Need Assistance?</h2>
                     <p className="text-lg text-gray-600">
                         Contact our customer support for inquiries or shipping assistance.
                     </p>

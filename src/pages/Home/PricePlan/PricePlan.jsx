@@ -103,7 +103,7 @@ const PricePlan = () => {
 
                         <button
                             onClick={calculateCost}
-                            className="btn btn-primary font-bold bg-yellow-500 hover:bg-[#EE8215] text-white w-full md:w-auto py-3 px-6  rounded-md border-[#EE8215] focus:outline-none focus:ring-2 focus:ring-primary shadow-lg"
+                            className="btn btn-primary font-bold bg-yellow-500 hover:bg-[#EE8215] text-white w-full md:w-auto py-3 px-6  rounded-md border-[#EE8215] focus:outline-none focus:ring-2 focus:ring-primary shadow-lg transform transition-transform duration-300 hover:scale-110"
                         >
                             Calculate Cost
                         </button>
