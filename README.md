@@ -6,7 +6,7 @@ The Parcel Management System is a MERN stack application where users can book pa
 
 ## 🚀 Live Site
 
-🔗 [Visit Courier-Z Live](https://your-live-site-link.com)
+🔗 [Visit Courier-Z Live](https://assignment12-fe277.web.app/)
 ---
 
 ## Features
